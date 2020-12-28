@@ -17,6 +17,7 @@ defmodule GallowsWeb.Router do
     pipe_through :browser
 
     get "/", HangmanController, :new_game
+    post "/", HangmanController, :create_game
   end
 
   if Mix.env() in [:dev, :test] do

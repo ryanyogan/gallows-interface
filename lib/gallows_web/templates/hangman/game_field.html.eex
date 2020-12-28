@@ -1,0 +1,9 @@
+<%= inspect @tally %>
+
+<p>
+  Turns Left: <%= @tally.turns_left %>
+</p>
+
+<p>
+  Word so far: <%= render_letters(@tally.letters) %>
+</p>
